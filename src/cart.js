@@ -8,9 +8,9 @@ const Cart = (props) => {
                    return (
                    <Cartitem product={product}
                     key={product.id}
-                    onincreasequantity={props.handleincreasequantity}
-                    ondecreasequantity={props.handledecreasequantity}
-                    ondeleteproduct={props.handledeleteproduct}
+                    onincreasequantity={props.onincreasequantity}
+                    ondecreasequantity={props.ondecreasequantity}
+                    ondeleteproduct={props.ondeleteproduct}
                     />
                 ) 
                 })}

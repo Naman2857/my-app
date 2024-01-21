@@ -31,7 +31,7 @@ class App extends React.Component {
         img: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fHww',
         id: 3
     }
-      ], loading: true
+      ]
   }
 }
 
@@ -47,7 +47,7 @@ handledecreasequantity = (product) =>
   console.log("increase the quantity");
   const {products} = this.state;
   const index = products.indexOf(product);
-  if(products[index].qty==0)
+  if(products[index].qty===0)
       return;
   products[index].qty--;
   this.setState({products})
